@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const List = ({ data, isLoading, items, setItems }) => {
   return isLoading ? (
     <span>en cours de chargement</span>
@@ -27,6 +28,7 @@ const List = ({ data, isLoading, items, setItems }) => {
                                   id: meals.id,
                                   title: meals.title,
                                   price: meals.price,
+                                  quantity: 1,
                                 });
                                 setItems(newItems);
                               }}
