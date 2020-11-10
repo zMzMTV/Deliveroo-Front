@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const List = ({ data, isLoading }) => {
+const List = ({ data, isLoading, items, setItems }) => {
   return isLoading ? (
     <span>en cours de chargement</span>
   ) : (
@@ -19,7 +19,18 @@ const List = ({ data, isLoading }) => {
                       {menu.meals.map((meals, id) => {
                         return (
                           <div>
-                            <div className="menuItem">
+                            <div
+                              className="menuItem"
+                              onClick={() => {
+                                const newItems = [...items];
+                                newItems.push({
+                                  id: meals.id,
+                                  title: meals.title,
+                                  price: meals.price,
+                                });
+                                setItems(newItems);
+                              }}
+                            >
                               <div className="menuItem-card">
                                 <div className="menuitem-texts">
                                   <div className="tit">
