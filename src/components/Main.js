@@ -24,12 +24,22 @@ const List = ({ data, isLoading, items, setItems }) => {
                               className="menuItem"
                               onClick={() => {
                                 const newItems = [...items];
-                                newItems.push({
-                                  id: meals.id,
-                                  title: meals.title,
-                                  price: meals.price,
-                                  quantity: 1,
-                                });
+                                let isFound = false;
+                                for (let i = 0; i < newItems.length; i++) {
+                                  if (newItems[i].id === meals.id) {
+                                    newItems[i].quantity++;
+                                    isFound = true;
+                                    break;
+                                  }
+                                }
+                                if (isFound === false) {
+                                  newItems.push({
+                                    id: meals.id,
+                                    title: meals.title,
+                                    price: meals.price,
+                                    qty: 1,
+                                  });
+                                }
                                 setItems(newItems);
                               }}
                             >
