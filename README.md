@@ -21,4 +21,4 @@ Just run `yarn` in your console to install all dependencies and `yarn start` to 
 
 ## Packages used
 
-- ![axios](https://www.npmjs.com/package/axios)
+- axios(https://www.npmjs.com/package/axios)
