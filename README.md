@@ -19,6 +19,20 @@ Just run `yarn` in your console to install all dependencies and `yarn start` to 
 
 - The counter goes minimum to 1 if you try to go under it will remove the item from the basket.
 
-## Packages used
+## Packages Used
 
 - [axios](https://www.npmjs.com/package/axios)
+
+- [React](https://reactjs.org/)
+
+## Road Map
+
+I will start soon a payment page using Stripe.
+
+## Netlify link
+
+Here you can see and try this project :
+
+https://zmzm-deliveroo.netlify.app/
+
+![](byebye.gif)
