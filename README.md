@@ -3,7 +3,7 @@
 # Deliveroo Menu
 
 This is a replica of the basket page from the deliveroo website.
-Its working with an http request to a back end I developed using `axios` package.
+Its working with an http request, to a back end I developed, using `axios` package.
 
 ## Installation
 
