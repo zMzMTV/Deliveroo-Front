@@ -62,9 +62,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        "https://lereacteur-deliveroo-api.herokuapp.com"
-      );
+      const response = await axios.get("https://zmzm-deliveroo.herokuapp.com/");
 
       setData(response.data);
     };
